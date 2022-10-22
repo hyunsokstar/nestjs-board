@@ -26,11 +26,8 @@ export class BoardsController {
 
   @Post()
   createBoard(
-    // @Body('title') title: string,
-    // @Body('description') description: string,
     @Body() createBoardDto: CreateBoardDto,
   ) {
-    // return this.boardsService.createBoard(title, description);
     return this.boardsService.createBoard(createBoardDto);
   }
 
